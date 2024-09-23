@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" width="80%" height="80%">
+        <tr><td colspan="2">période de stage du 27 Mai au 4 Juillet 2024</td></tr>
+        <tr> <td rowspan="3"> <img src="images2/R.png" width="150"> </tr>
+        <tr> <td> contacter une entreprise</td></tr>
+        <tr> <td>remplir la feuille d'engagement (à téléhcarger sur l'ent)</td></tr>
+        <tr> <td rowspan="4"> <img src="images2/8-scaled-1800x900.jpg" width="150"> </tr>
+        <tr> <td> signature du responsable de l'entreprise</td></tr>
+        <tr> <td> Signature du tuteur (Votre prof)</td></tr>
+        <tr> <td> Délivrance convention de stage</td></tr>
+    </table>
+</body>
+<h2>Formulaire d'inscription</h2>
+
+    <form action="#" method="POST">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="date-naissance">Date de naissance :</label><br>
+        <input type="date" id="date-naissance" name="date-naissance" required><br><br>
+
+        <label for="adresse">Adresse postale :</label><br>
+        <textarea id="adresse" name="adresse" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="classe">Classe :</label><br>
+        <select id="classe" name="classe" required>
+            <option value="BTS1">BTS 1</option>
+            <option value="BTS2">BTS 2</option>
+            <option value="L3">L3</option>
+        </select><br><br>
+
+        <button type="submit">Valider</button>
+        <button type="reset">Annuler</button>
+    </form>
+
+</html>
