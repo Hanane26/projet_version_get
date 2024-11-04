@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a8d8ea;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 60%;
+    background-color: #e0f7fa;
+}
+
+th, td {
+    border: 1px solid #00796b;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+}
+
+.btn {
+    margin: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-calc {
+    background-color: #00796b;
+    color: white;
+    border: none;
+}
+
+.btn-reset {
+    background-color: #e57373;
+    color: white;
+    border: none;
+}
