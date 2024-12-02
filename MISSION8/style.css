@@ -1,0 +1,105 @@
+/* Styles de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Définit la police principale pour tout le site */
+    margin: 0; /* Supprime les marges externes par défaut */
+    padding: 0; /* Supprime les espacements internes par défaut */
+    background-color: #f4f4f9; /* Couleur de fond gris clair */
+    color: #333; /* Couleur du texte gris foncé */
+}
+
+/* En-tête */
+header {
+    background-color: #ffb3d5; /* Couleur de fond rose pastel */
+    color: white; /* Couleur de texte blanche */
+    text-align: center; /* Centrer le contenu de l'en-tête */
+    padding: 1.5rem; /* Ajoute un espacement interne pour aérer l'en-tête */
+}
+
+header h1 {
+    margin: 0; /* Supprime les marges externes du titre principal */
+    font-size: 2rem; /* Définit la taille du texte pour le titre */
+}
+
+header p {
+    margin: 0.5rem 0 0; /* Ajoute un espacement entre le paragraphe et le titre */
+    font-size: 1rem; /* Taille du texte du paragraphe */
+}
+
+/* Conteneur principal */
+main {
+    display: flex; /* Active un modèle de mise en page en flexbox */
+    padding: 2rem; /* Ajoute un espacement autour du contenu principal */
+    max-width: 1200px; /* Définit une largeur maximale pour le conteneur */
+    margin: auto; /* Centre le conteneur horizontalement */
+    gap: 2rem; /* Espace entre les colonnes de flexbox */
+}
+
+/* Liste des exercices */
+#exercise-list {
+    flex: 1; /* Cette section prend une partie de l'espace disponible */
+}
+
+#exercise-list ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime les espacements internes */
+}
+
+#exercise-list li {
+    background: #ffb3d5; /* Couleur de fond rose pastel */
+    padding: 0.8rem; /* Espacement interne pour chaque élément */
+    margin: 0.5rem 0; /* Espacement vertical entre les éléments */
+    border-radius: 5px; /* Coins arrondis pour chaque élément */
+    cursor: pointer; /* Change le curseur en une main pour indiquer une interaction */
+    transition: all 0.2s; /* Ajoute une transition douce pour les effets */
+}
+
+#exercise-list li:hover {
+    background: #ffb3d5; /* Maintient la couleur rose au survol */
+    color: white; /* Change la couleur du texte en blanc au survol */
+}
+
+/* Conteneur d'exercice sélectionné */
+#exercise-container {
+    flex: 2; /* Cette section prend deux parties de l'espace disponible */
+    background: #ffffff; /* Fond blanc pour un contraste clair */
+    padding: 1.5rem; /* Ajoute un espacement interne */
+    border-radius: 8px; /* Coins arrondis pour un design fluide */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+}
+
+#exercise-container h2 {
+    color: #ffb3d5; /* Titre coloré en rose pastel */
+    margin: 0 0 1rem; /* Espacement entre le titre et le contenu */
+}
+
+#exercise-container p {
+    margin: 0.5rem 0; /* Espacement vertical entre les paragraphes */
+}
+
+/* Boutons */
+button {
+    padding: 0.8rem 1.2rem; /* Ajoute un espacement interne au bouton */
+    margin: 0.5rem; /* Espacement externe entre les boutons */
+    border: none; /* Supprime les bordures par défaut */
+    background: #fcfb3d5; /* Couleur de fond des boutons (note : ce code semble invalide et peut être corrigé en remplaçant par une couleur valide) */
+    color: white; /* Texte blanc pour un bon contraste */
+    border-radius: 5px; /* Coins arrondis pour un design fluide */
+    cursor: pointer; /* Change le curseur en une main pour indiquer une interaction */
+    transition: background 0.2s; /* Transition douce sur la couleur de fond */
+}
+
+button:hover {
+    background: #ffb3d5; /* Couleur de fond rose pastel au survol */
+}
+
+/* Pied de page */
+footer {
+    background-color: #ffb3d5; /* Couleur de fond rose pastel */
+    color: white; /* Texte blanc pour contraster */
+    text-align: center; /* Centre le texte du pied de page */
+    padding: 10px; /* Ajoute un espacement interne pour aérer */
+    position: fixed; /* Fixe le pied de page en bas de la fenêtre */
+    left: 0; /* Aligne le pied de page à gauche */
+    bottom: 0; /* Place le pied de page au bas de l'écran */
+    width: 100%; /* Étire le pied de page sur toute la largeur */
+}

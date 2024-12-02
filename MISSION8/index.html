@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="execices.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Plateforme d'auto-formation</title>
+</head>
+<body>
+    <header>
+        <!-- Titre principal de la page. Il donne une idée générale du sujet du site -->
+        <h1>Mission 8 : Plateforme d'Auto-formation JavaScript</h1>
+        <!-- Description brève du site, expliquant l'objectif de la plateforme -->
+        <p>Testez vos compétences en JavaScript avec 15 exercices interactifs.</p>
+    </header>
+    
+    <main>
+        <!-- Section contenant la liste des exercices -->
+        <section id="exercise-list">
+            <!-- Titre de la section pour les exercices -->
+            <h2>Liste des Exercices</h2>
+            <!-- Liste non ordonnée (ul) contenant les 15 exercices -->
+            <ul>
+                <!-- Chaque élément de liste représente un exercice. L'attribut 'onclick' appelle la fonction JavaScript 'loadExercise' avec un paramètre spécifique pour chaque exercice -->
+                <li onclick="loadExercise(1)">1. Somme de deux nombres</li>
+                <li onclick="loadExercise(2)">2. Vérification de la parité</li>
+                <li onclick="loadExercise(3)">3. Table de multiplication</li>
+                <li onclick="loadExercise(4)">4. Factorielle</li>
+                <li onclick="loadExercise(5)">5. Trouver le maximum</li>
+                <li onclick="loadExercise(6)">6. Calcul de moyenne</li>
+                <li onclick="loadExercise(7)">7. Vérification de nombre premier</li>
+                <li onclick="loadExercise(8)">8. Conversion Celsius-Fahrenheit</li>
+                <li onclick="loadExercise(9)">9. Inverser une chaîne</li>
+                <li onclick="loadExercise(10)">10. Tri de trois nombres</li>
+                <li onclick="loadExercise(11)">11. Compter les voyelles</li>
+                <li onclick="loadExercise(12)">12. Calcul de puissance</li>
+                <li onclick="loadExercise(13)">13. Somme d'une série</li>
+                <li onclick="loadExercise(14)">14. Pyramide d'étoiles</li>
+                <li onclick="loadExercise(15)">15. Vérification de palindrome</li>
+            </ul>
+        </section>
+    
+        <!-- Section qui affichera dynamiquement le contenu de l'exercice sélectionné -->
+        <section id="exercise-container">
+            <!-- Contenu dynamique des exercices sera chargé ici par la fonction JavaScript -->
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Section de pied de page qui contient des informations sur la création du site -->
+        <p>&copy; 2024 - Créé par Jani Hanane | Mission 8 - BTS SIO</p>
+    </footer>
+    
+      
+    
+      
+</body>
+</html>
