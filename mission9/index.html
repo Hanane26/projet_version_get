@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Quizz à la plateforme d’autoformation</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Quizz : HTML, CSS et Java</h1>
+    </header>
+    <main>
+        <form id="quizzForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. À quoi sert la balise &lt;a&gt; en HTML ?</p>
+                <label><input type="radio" name="q1" value="Ajouter un lien hypertexte"> Ajouter un lien hypertexte</label>
+                <label><input type="radio" name="q1" value="Insérer une image"> Insérer une image</label>
+                <label><input type="radio" name="q1" value="Créer une liste"> Créer une liste</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. Quelle est la fonction de l'attribut <code>alt</code> dans une balise &lt;img&gt; ?</p>
+                <label><input type="radio" name="q2" value="Décrire l'image si elle ne peut pas être affichée"> Décrire l'image si elle ne peut pas être affichée</label>
+                <label><input type="radio" name="q2" value="Ajouter un titre à l'image"> Ajouter un titre à l'image</label>
+                <label><input type="radio" name="q2" value="Modifier la taille de l'image"> Modifier la taille de l'image</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. Quelle balise HTML permet de créer un tableau ?</p>
+                <label><input type="radio" name="q3" value="&lt;table&gt;"> &lt;table&gt;</label>
+                <label><input type="radio" name="q3" value="&lt;div&gt;"> &lt;div&gt;</label>
+                <label><input type="radio" name="q3" value="&lt;tr&gt;"> &lt;tr&gt;</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. Quelle balise est utilisée pour définir un titre principal dans une page HTML ?</p>
+                <label><input type="radio" name="q4" value="&lt;title&gt;"> &lt;title&gt;</label>
+                <label><input type="radio" name="q4" value="&lt;h1&gt;"> &lt;h1&gt;</label>
+                <label><input type="radio" name="q4" value="&lt;header&gt;"> &lt;header&gt;</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. Comment définit-on un formulaire en HTML ?</p>
+                <label><input type="radio" name="q5" value="Avec la balise &lt;form&gt;"> Avec la balise &lt;form&gt;</label>
+                <label><input type="radio" name="q5" value="Avec la balise &lt;table&gt;"> Avec la balise &lt;table&gt;</label>
+                <label><input type="radio" name="q5" value="Avec la balise &lt;fieldset&gt;"> Avec la balise &lt;fieldset&gt;</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. À quoi sert CSS dans une page web ?</p>
+                <label><input type="radio" name="q6" value="Structurer le contenu"> Structurer le contenu</label>
+                <label><input type="radio" name="q6" value="Ajouter des styles et des couleurs"> Ajouter des styles et des couleurs</label>
+                <label><input type="radio" name="q6" value="Exécuter des scripts"> Exécuter des scripts</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. Comment sélectionner un élément par son <code>id</code> en CSS ?</p>
+                <label><input type="radio" name="q7" value="#id"> #id</label>
+                <label><input type="radio" name="q7" value=".id"> .id</label>
+                <label><input type="radio" name="q7" value="id"> id</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. Quelle propriété CSS permet de changer la couleur du texte ?</p>
+                <label><input type="radio" name="q8" value="background-color"> background-color</label>
+                <label><input type="radio" name="q8" value="text-color"> text-color</label>
+                <label><input type="radio" name="q8" value="color"> color</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. Quelle méthode est utilisée pour afficher un message à l’écran en Java ?</p>
+                <label><input type="radio" name="q9" value="System.print()"> System.print()</label>
+                <label><input type="radio" name="q9" value="System.out.println()"> System.out.println()</label>
+                <label><input type="radio" name="q9" value="Console.log()"> Console.log()</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p>10. Quel type de boucle exécute le code au moins une fois même si la condition est fausse ?</p>
+                <label><input type="radio" name="q10" value="for"> for</label>
+                <label><input type="radio" name="q10" value="while"> while</label>
+                <label><input type="radio" name="q10" value="do-while"> do-while</label>
+            </div>
+
+            <div class="actions">
+                <button type="button" onclick="testQCM()">Correction</button>
+                <button type="button" onclick="showCorrection()">Corrigé</button>
+                <button type="reset">Effacer</button>
+            </div>
+        </form>
+    </main>
+</html>
