@@ -4,222 +4,249 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Facture - Interface</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #e8f4f8;
-            }
-    
-            header {
-                background-color: #006666;
-                color: white;
-                text-align: center;
-                padding: 20px;
-            }
-    
-            .container {
-                max-width: 1200px;
-                margin: 20px auto;
-                padding: 20px;
-                background-color: #cce7eb;
-                border-radius: 8px;
-            }
-    
-            .row {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 20px;
-            }
-    
-            .column {
-                flex: 1;
-                margin: 0 10px;
-            }
-    
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-bottom: 20px;
-                background-color: white;
-            }
-    
-            th, td {
-                border: 1px solid #ccc;
-                padding: 10px;
-                text-align: center;
-            }
-    
-            th {
-                background-color: #006666;
-                color: white;
-            }
-    
-            #totaux {
-                background-color: #f9f9f9;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-            }
-    
-            #totaux p {
-                display: flex;
-                justify-content: space-between;
-                margin: 5px 0;
-            }
-    
-            #actions {
-                display: flex;
-                gap: 10px;
-            }
-    
-            button {
-                padding: 10px 20px;
-                background-color: #007BFF;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
-    
-            button:hover {
-                background-color: #0056b3;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>FACTURE</h1>
-        </header>
-    
-        <div class="container">
-            <!-- Informations du destinataire et de l'expéditeur -->
-            <div class="row">
-                <div class="column">
-                    <h3>Destinataire</h3>
-                    <p>Nom : <input type="text" placeholder="Nom"></p>
-                    <p>Nom de la société : <input type="text" placeholder="Société"></p>
-                    <p>Adresse postale : <input type="text" placeholder="Adresse"></p>
-                    <p>Téléphone : <input type="text" placeholder="Téléphone"></p>
-                    <p>Email : <input type="email" placeholder="Email"></p>
-                </div>
-    
-                <div class="column">
-                    <h3>Envoyez à</h3>
-                    <p>Nom : <input type="text" placeholder="Nom"></p>
-                    <p>Nom de la société : <input type="text" placeholder="Société"></p>
-                    <p>Adresse postale : <input type="text" placeholder="Adresse"></p>
-                    <p>Téléphone : <input type="text" placeholder="Téléphone"></p>
-                    <p>Email : <input type="email" placeholder="Email"></p>
-                </div>
+      
+    <style>
+        /* Style général pour le corps de la page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f4f8; /* Couleur de fond bleu clair */
+        }
+
+        /* Style pour l'en-tête */
+        header {
+            background-color: #006666; 
+            color: white; 
+            text-align: center; /* Centrer le texte */
+            padding: 20px; /* Espacement interne */
+        }
+
+        /* Conteneur principal */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto; 
+            padding: 20px;
+            background-color: #cce7eb; 
+            border-radius: 8px; /* Coins arrondis */
+        }
+
+        /* Disposition des sections en ligne */
+        .row {
+            display: flex; /* Disposition flexible */
+            justify-content: space-between; /* Espacement égal entre les colonnes */
+            margin-bottom: 20px;
+        }
+
+        /* Style des colonnes dans chaque ligne */
+        .column {
+            flex: 1; /* Chaque colonne prend un espace égal */
+            margin: 0 10px; /* Espacement horizontal */
+        }
+
+        /* Style du tableau */
+        table {
+            width: 100%; /* Largeur totale */
+            border-collapse: collapse; /* Fusion des bordures */
+            margin-bottom: 20px;
+            background-color: white; /* Fond blanc */
+        }
+
+        /* Style des cellules du tableau */
+        th, td {
+            border: 1px solid #ccc; /* Bordure grise */
+            padding: 10px; /* Espacement interne */
+            text-align: center; /* Centrage du texte */
+        }
+
+        /* Style des en-têtes du tableau */
+        th {
+            background-color: #006666; /* Fond vert foncé */
+            color: white; /* Texte blanc */
+        }
+
+        /* Section des totaux */
+        #totaux {
+            background-color: #f9f9f9; /* Fond gris clair */
+            padding: 10px; /* Espacement interne */
+            border: 1px solid #ccc; /* Bordure grise */
+            border-radius: 8px; /* Coins arrondis */
+        }
+
+        /* Espacement et alignement des éléments des totaux */
+        #totaux p {
+            display: flex; /* Disposition en ligne */
+            justify-content: space-between; /* Espacement entre les éléments */
+            margin: 5px 0; /* Espacement vertical */
+        }
+
+        /* Disposition des boutons d'action */
+        #actions {
+            display: flex; /* Disposition en ligne */
+            gap: 10px; /* Espacement entre les boutons */
+        }
+
+        /* Style des boutons */
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF; /* Couleur bleue */
+            color: white; /* Texte blanc */
+            border: none; /* Pas de bordure */
+            border-radius: 5px; /* Coins arrondis */
+            cursor: pointer; /* Curseur interactif */
+            transition: background-color 0.3s; /* Animation de transition */
+        }
+
+        /* Style du bouton au survol */
+        button:hover {
+            background-color: #0056b3; /* Bleu plus foncé au survol */
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête principale -->
+    <header>
+        <h1>FACTURE</h1>
+    </header>
+
+    <div class="container">
+        <!-- Informations du destinataire et de l'expéditeur -->
+        <div class="row">
+            <div class="column">
+                <h3>Destinataire</h3>
+                <!-- Champs pour entrer les informations du destinataire -->
+                <p>Nom : <input type="text" placeholder="Nom"></p>
+                <p>Nom de la société : <input type="text" placeholder="Société"></p>
+                <p>Adresse postale : <input type="text" placeholder="Adresse"></p>
+                <p>Téléphone : <input type="text" placeholder="Téléphone"></p>
+                <p>Email : <input type="email" placeholder="Email"></p>
             </div>
-    
-            <!-- Tableau des produits/services -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Description</th>
-                        <th>Quantité</th>
-                        <th>Prix Unitaire (€)</th>
-                        <th>Total (€)</th>
-                    </tr>
-                </thead>
-                <tbody id="facture-body">
-                    <tr>
-                        <td><input type="text" placeholder="Description"></td>
-                        <td><input type="number" min="1" value="1"></td>
-                        <td><input type="number" min="0" step="0.01" value="0"></td>
-                        <td class="total-ligne">0</td>
-                    </tr>
-                </tbody>
-            </table>
-    
-            <!-- Totaux -->
-            <div id="totaux">
-                <p><span>Sous-total :</span> <span id="sous-total">0.00 €</span></p>
-                <p><span>Remise :</span> <span id="remise">0.00 €</span></p>
-                <p><span>Sous-total moins remises :</span> <span id="sous-total-remise">0.00 €</span></p>
-                <p><span>Taux d'imposition :</span> <span id="taxe">10%</span></p>
-                <p><span>Taxe totale :</span> <span id="taxe-totale">0.00 €</span></p>
-                <p><span>Expédition, manutention :</span> <span id="frais">5.00 €</span></p>
-                <p><strong><span>SOLDE DU :</span> <span id="solde">0.00 €</span></strong></p>
-            </div>
-    
-            <!-- Boutons d'action -->
-            <div id="actions">
-                <button id="ajouter-ligne">Ajouter une ligne</button>
-                <button id="remplir-automatiquement">Remplir automatiquement</button>
-                <button id="calculer">Calculer</button>
-                <button id="annuler">Annuler</button>
+
+            <div class="column">
+                <h3>Envoyez à</h3>
+                <!-- Champs pour entrer les informations de l'expéditeur -->
+                <p>Nom : <input type="text" placeholder="Nom"></p>
+                <p>Nom de la société : <input type="text" placeholder="Société"></p>
+                <p>Adresse postale : <input type="text" placeholder="Adresse"></p>
+                <p>Téléphone : <input type="text" placeholder="Téléphone"></p>
+                <p>Email : <input type="email" placeholder="Email"></p>
             </div>
         </div>
-    
-        <script>
-            document.getElementById('ajouter-ligne').addEventListener('click', () => {
-                const tableBody = document.getElementById('facture-body');
-                const newRow = document.createElement('tr');
-    
-                newRow.innerHTML = `
+
+        <!-- Tableau pour entrer les produits/services -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire (€)</th>
+                    <th>Total (€)</th>
+                </tr>
+            </thead>
+            <tbody id="facture-body">
+                <!-- Ligne initiale par défaut -->
+                <tr>
                     <td><input type="text" placeholder="Description"></td>
                     <td><input type="number" min="1" value="1"></td>
                     <td><input type="number" min="0" step="0.01" value="0"></td>
                     <td class="total-ligne">0</td>
-                `;
-    
-                tableBody.appendChild(newRow);
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Section des totaux -->
+        <div id="totaux">
+            <p><span>Sous-total :</span> <span id="sous-total">0.00 €</span></p>
+            <p><span>Remise :</span> <span id="remise">0.00 €</span></p>
+            <p><span>Sous-total moins remises :</span> <span id="sous-total-remise">0.00 €</span></p>
+            <p><span>Taux d'imposition :</span> <span id="taxe">10%</span></p>
+            <p><span>Taxe totale :</span> <span id="taxe-totale">0.00 €</span></p>
+            <p><span>Expédition, manutention :</span> <span id="frais">5.00 €</span></p>
+            <p><strong><span>SOLDE DU :</span> <span id="solde">0.00 €</span></strong></p>
+        </div>
+
+        <!-- Boutons d'action -->
+        <div id="actions">
+            <button id="ajouter-ligne">Ajouter une ligne</button>
+            <button id="remplir-automatiquement">Remplir automatiquement</button>
+            <button id="calculer">Calculer</button>
+            <button id="annuler">Annuler</button>
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script>
+        // Ajouter une nouvelle ligne au tableau
+        document.getElementById('ajouter-ligne').addEventListener('click', () => {
+            const tableBody = document.getElementById('facture-body');
+            const newRow = document.createElement('tr');
+
+            // Structure HTML de la nouvelle ligne
+            newRow.innerHTML = `
+                <td><input type="text" placeholder="Description"></td>
+                <td><input type="number" min="1" value="1"></td>
+                <td><input type="number" min="0" step="0.01" value="0"></td>
+                <td class="total-ligne">0</td>
+            `;
+
+            tableBody.appendChild(newRow); // Ajouter la ligne au tableau
+        });
+
+        // Réinitialiser le tableau et les totaux
+        document.getElementById('annuler').addEventListener('click', () => {
+            document.getElementById('facture-body').innerHTML = ''; // Vider le tableau
+            document.querySelectorAll('#totaux span').forEach(span => span.textContent = '0.00 €'); // Réinitialiser les totaux
+        });
+
+        // Calculer les totaux
+        document.getElementById('calculer').addEventListener('click', () => {
+            let sousTotal = 0; // Initialisation du sous-total
+            document.querySelectorAll('#facture-body tr').forEach(row => {
+                const quantite = parseFloat(row.children[1].querySelector('input').value);
+                const prixUnitaire = parseFloat(row.children[2].querySelector('input').value);
+                const total = quantite * prixUnitaire; // Calcul du total par ligne
+
+                row.children[3].textContent = total.toFixed(2); // Afficher le total par ligne
+                sousTotal += total; // Ajouter au sous-total
             });
-    
-            document.getElementById('annuler').addEventListener('click', () => {
-                document.getElementById('facture-body').innerHTML = '';
-                document.querySelectorAll('#totaux span').forEach(span => span.textContent = '0.00 €');
-            });
-    
-            document.getElementById('calculer').addEventListener('click', () => {
-                let sousTotal = 0;
-                document.querySelectorAll('#facture-body tr').forEach(row => {
-                    const quantite = parseFloat(row.children[1].querySelector('input').value);
-                    const prixUnitaire = parseFloat(row.children[2].querySelector('input').value);
-                    const total = quantite * prixUnitaire;
-    
-                    row.children[3].textContent = total.toFixed(2);
-                    sousTotal += total;
-                });
-    
-                const remise = 10; // Exemple fixe
-                const taxe = 0.10; // Exemple 10%
-                const frais = 5.00;
-    
-                const sousTotalRemise = sousTotal - remise;
-                const taxeTotale = sousTotalRemise * taxe;
-                const solde = sousTotalRemise + taxeTotale + frais;
-    
-                document.getElementById('sous-total').textContent = sousTotal.toFixed(2) + ' €';
-                document.getElementById('remise').textContent = remise.toFixed(2) + ' €';
-                document.getElementById('sous-total-remise').textContent = sousTotalRemise.toFixed(2) + ' €';
-                document.getElementById('taxe-totale').textContent = taxeTotale.toFixed(2) + ' €';
-                document.getElementById('solde').textContent = solde.toFixed(2) + ' €';
-            });
-    
-            document.getElementById('remplir-automatiquement').addEventListener('click', () => {
-                const tableBody = document.getElementById('facture-body');
-                tableBody.innerHTML = `
-                    <tr>
-                        <td>Description 1</td>
-                        <td>1</td>
-                        <td>100</td>
-                        <td class="total-ligne">100</td>
-                    </tr>
-                    <tr>
-                        <td>Description 2</td>
-                        <td>2</td>
-                        <td>50</td>
-                        <td class="total-ligne">100</td>
-                    </tr>
-                `;
-            });
-        </script>
+
+            const remise = 10; // Remise fixe
+            const taxe = 0.10; // Taux de taxe
+            const frais = 5.00; // Frais fixes
+
+            const sousTotalRemise = sousTotal - remise; // Sous-total après remise
+            const taxeTotale = sousTotalRemise * taxe; // Calcul de la taxe totale
+            const solde = sousTotalRemise + taxeTotale + frais; // Calcul du solde total
+
+            // Mettre à jour les éléments de la section totaux
+            document.getElementById('sous-total').textContent = sousTotal.toFixed(2) + ' €';
+            document.getElementById('remise').textContent = remise.toFixed(2) + ' €';
+            document.getElementById('sous-total-remise').textContent = sousTotalRemise.toFixed(2) + ' €';
+            document.getElementById('taxe-totale').textContent = taxeTotale.toFixed(2) + ' €';
+            document.getElementById('solde').textContent = solde.toFixed(2) + ' €';
+        });
+
+        // Remplir automatiquement la table avec des exemples
+        document.getElementById('remplir-automatiquement').addEventListener('click', () => {
+            const tableBody = document.getElementById('facture-body');
+            tableBody.innerHTML = `
+                <tr>
+                    <td>Description 1</td>
+                    <td>1</td>
+                    <td>100</td>
+                    <td class="total-ligne">100</td>
+                </tr>
+                <tr>
+                    <td>Description 2</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td class="total-ligne">100</td>
+                </tr>
+            `;
+        });
+    </script>
+
+
     </body>
     </html>
     
